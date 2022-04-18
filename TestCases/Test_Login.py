@@ -1,25 +1,34 @@
+from asyncio.log import logger
 from PageObjects.LoginPage import LoginPage
 from Utilities.ReadProperties import ReadConfig
+from Utilities.CustomLogger import LogGen
 
 class Test_001_Login: #For pytest the class
-    baseURL     = ReadConfig.getApplicationURL()
-    email       = ReadConfig.getEmail
-    password    = ReadConfig.getPassword
+    baseURL= ReadConfig.getApplicationURL()
+    email= ReadConfig.getEmail()
+    password= ReadConfig.getPassword()
+    logger= LogGen.log_gen()
 
-    def test_homePageTitle(self, setup): 
+    def test_homePageTitle(self, setup):
+        self.logger.info("****************************test_homePageTitle***************************")
+        self.logger.info("Verifying Home Page Title")
         self.driver = setup
         self.driver.get(self.baseURL)
         act_title = self.driver.title
         
         if act_title == "Your store. Login":
             self.driver.close()
+            self.logger.info("Validation result : PASSED")
             assert True
         else:
             self.driver.save_screenshot(".\\Screenshots\\"+"test_homePageTitle.png")
             self.driver.close()
+            self.logger.error("Validation result : FAILED")
             assert False
 
     def test_login(self, setup):
+        self.logger.info("****************************test_login***************************")
+        self.logger.info("Verifying Login test")
         self.driver = setup
         self.driver.get(self.baseURL)
         self.driver.maximize_window()
@@ -31,9 +40,11 @@ class Test_001_Login: #For pytest the class
                 
         if act_title == "Dashboard / nopCommerce administration":
             self.driver.close()
+            self.logger.info("Validation result : PASSED")
             assert True
         else:
             self.driver.save_screenshot(".\\Screenshots\\"+"test_login.png")
             self.driver.close()
+            self.logger.error("Validation result : FAILED")
             assert False
 
