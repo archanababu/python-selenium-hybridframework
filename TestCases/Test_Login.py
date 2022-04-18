@@ -1,9 +1,10 @@
 from PageObjects.LoginPage import LoginPage
+from Utilities.ReadProperties import ReadConfig
 
 class Test_001_Login: #For pytest the class
-    baseURL = "https://admin-demo.nopcommerce.com/"
-    email = "admin@yourstore.com"
-    password = "admin"
+    baseURL     = ReadConfig.getApplicationURL()
+    email       = ReadConfig.getEmail
+    password    = ReadConfig.getPassword
 
     def test_homePageTitle(self, setup): 
         self.driver = setup
