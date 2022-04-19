@@ -7,7 +7,7 @@ class Test_001_Login: #For pytest the class
     baseURL= ReadConfig.getApplicationURL()
     email= ReadConfig.getEmail()
     password= ReadConfig.getPassword()
-    logger= LogGen.log_gen()
+    logger= LogGen.loggen()
 
     def test_homePageTitle(self, setup):
         self.logger.info("****************************test_homePageTitle***************************")

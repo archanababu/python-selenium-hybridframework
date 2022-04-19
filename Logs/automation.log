@@ -1,0 +1,18 @@
+04/18/2022 06:29:28 PM: INFO: ****************************test_homePageTitle***************************
+04/18/2022 06:29:28 PM: INFO: Verifying Home Page Title
+04/18/2022 06:29:29 PM: INFO: Validation result : PASSED
+04/18/2022 06:29:34 PM: INFO: ****************************test_login***************************
+04/18/2022 06:29:34 PM: INFO: Verifying Login test
+04/18/2022 06:29:39 PM: INFO: Validation result : PASSED
+04/18/2022 06:30:37 PM: INFO: ****************************test_homePageTitle***************************
+04/18/2022 06:30:37 PM: INFO: Verifying Home Page Title1
+04/18/2022 06:30:39 PM: INFO: Validation result : PASSED
+04/18/2022 06:30:44 PM: INFO: ****************************test_login***************************
+04/18/2022 06:30:44 PM: INFO: Verifying Login test
+04/18/2022 06:30:49 PM: ERROR: Validation result : FAILED
+04/18/2022 06:31:36 PM: INFO: ****************************test_homePageTitle***************************
+04/18/2022 06:31:36 PM: INFO: Verifying Home Page Title
+04/18/2022 06:31:38 PM: INFO: Validation result : PASSED
+04/18/2022 06:31:42 PM: INFO: ****************************test_login***************************
+04/18/2022 06:31:42 PM: INFO: Verifying Login test
+04/18/2022 06:31:49 PM: INFO: Validation result : PASSED
