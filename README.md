@@ -1,5 +1,6 @@
 # python-selenium-hybridframework
 
+Designing selenium hybrid framework using page object model
 
 # To run test on desired browser
 
