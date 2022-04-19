@@ -14,3 +14,6 @@ pytest -s -v -n=2 TestCases\Test_Login.py
 
 -n = 2 (-n means number of workers. At max 3, otherwise the performance will be slow)
 
+# To generated pytest-html report
+
+pytest -s -v -n=2 --html=Reports\report.html TestCases\Test_Login.py
