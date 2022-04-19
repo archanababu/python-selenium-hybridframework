@@ -15,5 +15,13 @@ class ReadConfig:
     @staticmethod # Static method means this method can be access by using class name. No need to create an object
     def getPassword():
         return config.get('test','password')
+
+    @staticmethod # Static method means this method can be access by using class name. No need to create an object
+    def getTestData():
+        return config.get('test','testdata')
+
+    @staticmethod # Static method means this method can be access by using class name. No need to create an object
+    def getTestDataSheetName():
+        return config.get('test','login_data')
         
 

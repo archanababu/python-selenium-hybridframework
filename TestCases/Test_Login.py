@@ -3,7 +3,7 @@ from PageObjects.LoginPage import LoginPage
 from Utilities.ReadProperties import ReadConfig
 from Utilities.CustomLogger import LogGen
 
-class Test_001_Login: #For pytest the class
+class Test_001_Login: #For pytest the class should start with Test 
     baseURL= ReadConfig.getApplicationURL()
     email= ReadConfig.getEmail()
     password= ReadConfig.getPassword()
