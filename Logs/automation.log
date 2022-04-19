@@ -55,3 +55,27 @@
 04/18/2022 08:54:29 PM: INFO: Verifying Home Page Title
 04/18/2022 08:54:31 PM: INFO: Validation result : PASSED
 04/18/2022 08:54:35 PM: INFO: Validation result : PASSED
+04/18/2022 11:33:16 PM: INFO: ****************************test_login***************************
+04/18/2022 11:33:16 PM: INFO: Verifying Login test
+04/18/2022 11:33:16 PM: INFO: ****************************test_homePageTitle***************************
+04/18/2022 11:33:16 PM: INFO: Verifying Home Page Title
+04/18/2022 11:33:17 PM: INFO: Validation result : PASSED
+04/18/2022 11:33:22 PM: INFO: Validation result : PASSED
+04/18/2022 11:35:53 PM: INFO: ****************************test_login***************************
+04/18/2022 11:35:53 PM: INFO: Verifying Login test
+04/18/2022 11:35:53 PM: INFO: ****************************test_homePageTitle***************************
+04/18/2022 11:35:53 PM: INFO: Verifying Home Page Title
+04/18/2022 11:35:55 PM: INFO: Validation result : PASSED
+04/18/2022 11:35:58 PM: INFO: Validation result : PASSED
+04/18/2022 11:46:18 PM: INFO: ****************************test_login***************************
+04/18/2022 11:46:18 PM: INFO: Verifying Login test
+04/18/2022 11:46:18 PM: INFO: ****************************test_homePageTitle***************************
+04/18/2022 11:46:18 PM: INFO: Verifying Home Page Title
+04/18/2022 11:46:20 PM: INFO: Validation result : PASSED
+04/18/2022 11:46:23 PM: INFO: Validation result : PASSED
+04/18/2022 11:48:41 PM: INFO: ****************************test_homePageTitle***************************
+04/18/2022 11:48:41 PM: INFO: Verifying Home Page Title
+04/18/2022 11:48:41 PM: INFO: ****************************test_login***************************
+04/18/2022 11:48:41 PM: INFO: Verifying Login test
+04/18/2022 11:48:42 PM: INFO: Validation result : PASSED
+04/18/2022 11:48:46 PM: INFO: Validation result : PASSED

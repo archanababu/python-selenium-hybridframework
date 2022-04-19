@@ -27,3 +27,24 @@ def pytest_addoption(parser):
 @pytest.fixture()
 def browser(request):
     return request.config.getoption("--browser") 
+
+#Pytest HTML Report
+
+# Edit report title by using the pytest_html_report_title hook:
+def pytest_html_report_title(report):    
+    report.title = "Nop commerce validation"
+
+# To access the metadata from a plugin, you can use the _metadata attribute of the config object. This can be used to read/add/modify the metadata:
+def pytest_configure(config):
+    config._metadata['Project Name'] = 'nopcommerce'
+    config._metadata['Module Name'] = 'Customer'
+    config._metadata['Tester'] = 'arcbabu'
+    
+
+# To add/modify/delete metadata at the end of metadata collection, you can use the pytest_metadata hook:
+@pytest.mark.optionalhook
+def pytest_metadata(metadata):
+    metadata.pop("JAVA_HOME", None)
+    metadata.pop("Plugins", None)
+
+
