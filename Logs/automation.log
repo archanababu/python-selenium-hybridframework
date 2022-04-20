@@ -97,3 +97,9 @@
 04/19/2022 12:36:38 PM: INFO: TestData 4: Validation result : PASSED
 04/19/2022 12:36:38 PM: INFO: loginDDT Validation PASSED
 04/19/2022 12:36:38 PM: INFO: loginDDT Validation Completed
+04/19/2022 06:21:33 PM: INFO: ****************************test_addCustomer***************************
+04/19/2022 06:21:38 PM: INFO: Login successful
+04/19/2022 06:21:38 PM: INFO: Validating add customer feature
+04/19/2022 06:29:58 PM: INFO: ****************************test_addCustomer***************************
+04/19/2022 06:30:03 PM: INFO: Login successful
+04/19/2022 06:30:03 PM: INFO: Validating add customer feature
