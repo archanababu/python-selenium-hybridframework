@@ -1,4 +1,5 @@
-from random import random
+import string
+import random
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from PageObjects.AddCustomerPage import AddCustomer
@@ -32,8 +33,8 @@ class Test_003_AddCustomer:
         self.logger.info("Clicked Add New button")
 
         self.logger.info("Providing new customer details")
-        # self.email = random_generator()+"gmail.com"
-        self.addCust.setEmail("test@gmail.com")
+        self.email = random_generator()+"@gmail.com"
+        self.addCust.setEmail(self.email)
         self.addCust.setPassword("test123")
         self.addCust.setFirstname("TestFirstName")
         self.addCust.setLastname("TestLastName")
@@ -41,16 +42,16 @@ class Test_003_AddCustomer:
         self.addCust.setDOB("4/7/2000")
         self.addCust.setCompany("TestCompany")
         self.addCust.clickOnTaxExcempt()
-        self.addCust.clickOnNewsletter("Your store name")
+        # self.addCust.clickOnNewsletter("Your store name")
         self.addCust.clickOnCustomerRoles("Guests")
-        self.addCust.clickOnVendorManager("Not a vendor")
+        self.addCust.clickOnVendorManager("Vendor 1")
         self.addCust.clickOnActive()
         self.addCust.setAdminComment("Testing add new customer feature")
         self.addCust.clickSave()
         self.logger.info("Clicked save button to add new customer")
         # self.driver = webdriver.Chrome(executable_path="C:\Workspace\WebDriver\chromedriver.exe")
 
-        self.msg = self.driver.find_element(By.XPATH("//button[contains(text(),'×')]")).text
+        self.msg = self.driver.find_element(By.TAG_NAME,"body").text
 
         if "The new customer has been added successfully." in self.msg:
             self.logger.info("Adding new customer validation PASSED")
@@ -64,10 +65,10 @@ class Test_003_AddCustomer:
         self.logger.info("Ending test_addCustomer test case")
 
 
-""" def random_generator(size=8,chars= string.ascii_lowercase+string.digits):
+def random_generator(size=8,chars= string.ascii_lowercase+string.digits):
     return ''.join(random.choice(chars) for x in range(size))        
 
- """
+
         
         
 
