@@ -8,7 +8,7 @@ from Utilities.CustomLogger import LogGen
 from Utilities import xlUtils
 import time
 
-class Test_001_LoginDDT: #For pytest the class should start with Test
+class Test_002_LoginDDT: #For pytest the class should start with Test
     baseURL     = ReadConfig.getApplicationURL()
     path        = ReadConfig.getTestData()
     sheetName   = ReadConfig.getTestDataSheetName()
