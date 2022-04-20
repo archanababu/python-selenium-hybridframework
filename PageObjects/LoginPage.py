@@ -11,6 +11,7 @@ class LoginPage:
     def __init__(self,driver):
         # driver = webdriver.Chrome(executable_path="C:\Workspace\WebDriver\chromedriver.exe")
         self.driver = driver        
+      
     
     def setEmail(self, email):
         self.driver.find_element(By.ID,self.textbox_email_id).clear()
