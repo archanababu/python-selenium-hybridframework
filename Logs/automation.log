@@ -435,3 +435,16 @@
 04/20/2022 07:04:50 PM: INFO: Validating search customer by email testing
 04/20/2022 07:04:57 PM: INFO: Search customer by email validation PASSED
 04/20/2022 07:04:58 PM: INFO: Ending test_addCustomer test case
+04/20/2022 07:19:26 PM: INFO: ****************************test_searchCustomerByEmail***************************
+04/20/2022 07:19:31 PM: INFO: Login successful
+04/20/2022 07:19:31 PM: INFO: Validating search customer by email testing
+04/20/2022 07:19:39 PM: INFO: Search customer by email validation PASSED
+04/20/2022 07:19:39 PM: INFO: Ending test_searchCustomerByEmail test case
+04/20/2022 07:20:11 PM: INFO: ****************************test_searchCustomerByName***************************
+04/20/2022 07:20:16 PM: INFO: Login successful
+04/20/2022 07:20:16 PM: INFO: Validating search customer by email testing
+04/20/2022 07:24:57 PM: INFO: ****************************test_searchCustomerByName***************************
+04/20/2022 07:25:02 PM: INFO: Login successful
+04/20/2022 07:25:02 PM: INFO: Validating search customer by email testing
+04/20/2022 07:25:09 PM: INFO: Search customer by name validation PASSED
+04/20/2022 07:25:10 PM: INFO: Ending test_searchCustomerByName test case
