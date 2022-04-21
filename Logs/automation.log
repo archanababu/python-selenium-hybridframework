@@ -397,3 +397,41 @@
 04/20/2022 03:59:20 PM: INFO: Clicked save button to add new customer
 04/20/2022 03:59:21 PM: INFO: Adding new customer validation PASSED
 04/20/2022 03:59:21 PM: INFO: Ending test_addCustomer test case
+04/20/2022 06:17:52 PM: INFO: ****************************test_addCustomer***************************
+04/20/2022 06:17:56 PM: INFO: Login successful
+04/20/2022 06:17:56 PM: INFO: Validating search customer by email testing
+04/20/2022 06:19:28 PM: INFO: ****************************test_addCustomer***************************
+04/20/2022 06:19:32 PM: INFO: Login successful
+04/20/2022 06:19:32 PM: INFO: Validating search customer by email testing
+04/20/2022 06:29:33 PM: INFO: ****************************test_addCustomer***************************
+04/20/2022 06:29:38 PM: INFO: Login successful
+04/20/2022 06:29:38 PM: INFO: Validating search customer by email testing
+04/20/2022 06:31:04 PM: INFO: ****************************test_addCustomer***************************
+04/20/2022 06:31:07 PM: INFO: Login successful
+04/20/2022 06:31:07 PM: INFO: Validating search customer by email testing
+04/20/2022 06:36:56 PM: INFO: ****************************test_addCustomer***************************
+04/20/2022 06:37:01 PM: INFO: Login successful
+04/20/2022 06:37:01 PM: INFO: Validating search customer by email testing
+04/20/2022 06:39:45 PM: INFO: ****************************test_addCustomer***************************
+04/20/2022 06:39:48 PM: INFO: Login successful
+04/20/2022 06:39:48 PM: INFO: Validating search customer by email testing
+04/20/2022 06:41:42 PM: INFO: ****************************test_addCustomer***************************
+04/20/2022 06:41:45 PM: INFO: Login successful
+04/20/2022 06:41:45 PM: INFO: Validating search customer by email testing
+04/20/2022 06:55:58 PM: INFO: ****************************test_addCustomer***************************
+04/20/2022 06:56:09 PM: INFO: Login successful
+04/20/2022 06:56:09 PM: INFO: Validating search customer by email testing
+04/20/2022 06:57:32 PM: INFO: ****************************test_addCustomer***************************
+04/20/2022 06:57:36 PM: INFO: Login successful
+04/20/2022 06:57:36 PM: INFO: Validating search customer by email testing
+04/20/2022 06:58:28 PM: INFO: ****************************test_addCustomer***************************
+04/20/2022 06:58:33 PM: INFO: Login successful
+04/20/2022 06:58:33 PM: INFO: Validating search customer by email testing
+04/20/2022 06:59:33 PM: INFO: ****************************test_addCustomer***************************
+04/20/2022 06:59:38 PM: INFO: Login successful
+04/20/2022 06:59:38 PM: INFO: Validating search customer by email testing
+04/20/2022 07:04:45 PM: INFO: ****************************test_addCustomer***************************
+04/20/2022 07:04:50 PM: INFO: Login successful
+04/20/2022 07:04:50 PM: INFO: Validating search customer by email testing
+04/20/2022 07:04:57 PM: INFO: Search customer by email validation PASSED
+04/20/2022 07:04:58 PM: INFO: Ending test_addCustomer test case

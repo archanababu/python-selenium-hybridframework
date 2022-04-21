@@ -13,14 +13,12 @@ class SearchCustomer:
     text_ipaddress_id = "SearchIpAddress"
     list_customer_role_xpath = "//div[@class='k-multiselect-wrap k-floatwrap']"
     button_search_id = "search-customers"
-
-    table_searchresult_xpath = "//table[@role='grid']"
     table_xpath = "//table[@id='customers-grid']"
     tableRows_xpath = "//table[@id='customers-grid']//tbody/tr"
     tableColumns_xpath = "//table[@id='customers-grid']//tbody/tr/td"
 
     def __init__(self,driver):
-        driver = webdriver.Chrome(executable_path="C:\Workspace\WebDriver\chromedriver.exe")
+        # driver = webdriver.Chrome(executable_path="C:\Workspace\WebDriver\chromedriver.exe")
         self.driver = driver 
     
     def setEmail(self, email):
@@ -51,28 +49,32 @@ class SearchCustomer:
     def search(self):
         self.driver.find_element(By.ID, self.button_search_id).click()
 
-    def getNoOfRows(self):
-        return len(self.driver.find_element(By.XPATH,self.tableRows_xpath))
+    def getNoOfRows(self):        
+        return len(self.driver.find_elements(By.XPATH,self.tableRows_xpath))
 
     def getNoofColumns(self):
-        return len(self.driver.find_element(By.XPATH,self.tableColumns_xpath))
+        return len(self.driver.find_elements(By.XPATH,self.tableColumns_xpath))
 
     def searchCustomerByEmail(self, email):
         flag = False
-        for r in range(1, self.getNoOfRows()+1):
-            table = self.driver.find_element(By.XPATH, self.table_xpath)
-            emailId = table.find_element(By.XPATH,"//table[@id='customer-grid']/tbody/tr["+str(r)+"]/td[2]").text
-            if emailId == email:
+        table = self.driver.find_element(By.XPATH, self.table_xpath)
+        rows = table.find_elements(By.XPATH,self.tableRows_xpath)
+        for r in rows:
+            col = r.find_elements(By.TAG_NAME,"td")[1].text
+            print(col)
+            if col == email:
                 flag = True
                 break
         return flag
-
+        
     def searchCustomerByName(self, name):
         flag = False
-        for r in range(1, self.getNoOfRows()+1):
-            table = self.driver.find_element(By.XPATH, self.table_xpath)
-            nameId = table.find_element(By.XPATH,"//table[@id='customer-grid']/tbody/tr["+str(r)+"]/td[3]").text
-            if nameId == name:
+        table = self.driver.find_element(By.XPATH, self.table_xpath)
+        rows = table.find_elements(By.XPATH,self.tableRows_xpath)
+        for r in rows:
+            col = r.find_elements(By.TAG_NAME,"td")[2].text
+            print(col)
+            if col == name:
                 flag = True
                 break
         return flag
