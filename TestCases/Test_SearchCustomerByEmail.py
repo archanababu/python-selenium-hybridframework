@@ -11,8 +11,8 @@ class Test_004_SearchCustomerByEmail:
     password= ReadConfig.getPassword()
     logger  = LogGen.loggen()
 
-    def test_addCustomer(self, setup):
-        self.logger.info("****************************test_addCustomer***************************")
+    def test_searchCustomerByEmail(self, setup):
+        self.logger.info("****************************test_searchCustomerByEmail***************************")
         self.driver = setup
         self.driver.get(self.baseURL)
         self.driver.maximize_window()
@@ -38,10 +38,10 @@ class Test_004_SearchCustomerByEmail:
             self.logger.info("Search customer by email validation PASSED")
             assert True
         else:
-            self.driver.save_screenshot(".\\Screenshots\\"+"test_addCustomer.png")
+            self.driver.save_screenshot(".\\Screenshots\\"+"test_searchCustomerByEmail.png")
             self.logger.info("Search customer by email validation FAILED")
             assert False
 
         self.driver.close()
-        self.logger.info("Ending test_addCustomer test case")
+        self.logger.info("Ending test_searchCustomerByEmail test case")
 
