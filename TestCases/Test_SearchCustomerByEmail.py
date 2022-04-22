@@ -1,4 +1,6 @@
 import time
+
+import pytest
 from PageObjects.LoginPage import LoginPage
 from PageObjects.AddCustomerPage import AddCustomer
 from PageObjects.SearchCustomerPage import SearchCustomer
@@ -11,6 +13,7 @@ class Test_004_SearchCustomerByEmail:
     password= ReadConfig.getPassword()
     logger  = LogGen.loggen()
 
+    @pytest.mark.regression
     def test_searchCustomerByEmail(self, setup):
         self.logger.info("****************************test_searchCustomerByEmail***************************")
         self.driver = setup

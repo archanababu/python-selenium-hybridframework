@@ -2,6 +2,7 @@ from asyncio.log import logger
 from importlib.resources import path
 
 from pytest import fail
+import pytest
 from PageObjects.LoginPage import LoginPage
 from Utilities.ReadProperties import ReadConfig
 from Utilities.CustomLogger import LogGen
@@ -14,6 +15,8 @@ class Test_002_LoginDDT: #For pytest the class should start with Test
     sheetName   = ReadConfig.getTestDataSheetName()
     logger      = LogGen.loggen()
     
+    @pytest.mark.regression
+    @pytest.mark.sanity
     def test_loginDDT(self, setup):
         self.logger.info("****************************test_loginDDT***************************")
         self.logger.info("Verifying Login test")

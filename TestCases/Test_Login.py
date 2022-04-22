@@ -1,4 +1,7 @@
 from asyncio.log import logger
+import py
+
+import pytest
 from PageObjects.LoginPage import LoginPage
 from Utilities.ReadProperties import ReadConfig
 from Utilities.CustomLogger import LogGen
@@ -9,6 +12,7 @@ class Test_001_Login: #For pytest the class should start with Test
     password= ReadConfig.getPassword()
     logger= LogGen.loggen()
 
+    @pytest.mark.sanity
     def test_homePageTitle(self, setup):
         self.logger.info("****************************test_homePageTitle***************************")
         self.logger.info("Verifying Home Page Title")
@@ -26,6 +30,8 @@ class Test_001_Login: #For pytest the class should start with Test
             self.logger.error("Validation result : FAILED")
             assert False
 
+    @pytest.mark.sanity
+    @pytest.mark.regression
     def test_login(self, setup):
         self.logger.info("****************************test_login***************************")
         self.logger.info("Verifying Login test")

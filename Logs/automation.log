@@ -448,3 +448,46 @@
 04/20/2022 07:25:02 PM: INFO: Validating search customer by email testing
 04/20/2022 07:25:09 PM: INFO: Search customer by name validation PASSED
 04/20/2022 07:25:10 PM: INFO: Ending test_searchCustomerByName test case
+04/22/2022 10:38:09 AM: INFO: ****************************test_homePageTitle***************************
+04/22/2022 10:38:09 AM: INFO: Verifying Home Page Title
+04/22/2022 10:38:11 AM: INFO: Validation result : PASSED
+04/22/2022 10:38:15 AM: INFO: ****************************test_login***************************
+04/22/2022 10:38:15 AM: INFO: Verifying Login test
+04/22/2022 10:38:22 AM: INFO: Validation result : PASSED
+04/22/2022 10:38:26 AM: INFO: ****************************test_loginDDT***************************
+04/22/2022 10:38:26 AM: INFO: Verifying Login test
+04/22/2022 10:38:34 AM: INFO: TestData 1: Validation result : PASSED
+04/22/2022 10:38:38 AM: INFO: TestData 2: Validation result : PASSED
+04/22/2022 10:38:42 AM: INFO: TestData 3: Validation result : PASSED
+04/22/2022 10:38:46 AM: INFO: TestData 4: Validation result : PASSED
+04/22/2022 10:38:46 AM: INFO: loginDDT Validation PASSED
+04/22/2022 10:38:46 AM: INFO: loginDDT Validation Completed
+04/22/2022 10:39:11 AM: INFO: ****************************test_addCustomer***************************
+04/22/2022 10:39:15 AM: INFO: Login successful
+04/22/2022 10:39:15 AM: INFO: Validating add customer feature
+04/22/2022 10:39:21 AM: INFO: Clicked Add New button
+04/22/2022 10:39:21 AM: INFO: Providing new customer details
+04/22/2022 10:39:31 AM: INFO: Clicked save button to add new customer
+04/22/2022 10:39:31 AM: INFO: Adding new customer validation PASSED
+04/22/2022 10:39:31 AM: INFO: Ending test_addCustomer test case
+04/22/2022 10:39:35 AM: INFO: ****************************test_login***************************
+04/22/2022 10:39:35 AM: INFO: Verifying Login test
+04/22/2022 10:39:39 AM: INFO: Validation result : PASSED
+04/22/2022 10:39:43 AM: INFO: ****************************test_loginDDT***************************
+04/22/2022 10:39:43 AM: INFO: Verifying Login test
+04/22/2022 10:39:50 AM: INFO: TestData 1: Validation result : PASSED
+04/22/2022 10:39:54 AM: INFO: TestData 2: Validation result : PASSED
+04/22/2022 10:39:58 AM: INFO: TestData 3: Validation result : PASSED
+04/22/2022 10:40:01 AM: INFO: TestData 4: Validation result : PASSED
+04/22/2022 10:40:01 AM: INFO: loginDDT Validation PASSED
+04/22/2022 10:40:02 AM: INFO: loginDDT Validation Completed
+04/22/2022 10:40:05 AM: INFO: ****************************test_searchCustomerByEmail***************************
+04/22/2022 10:40:09 AM: INFO: Login successful
+04/22/2022 10:40:09 AM: INFO: Validating search customer by email testing
+04/22/2022 10:40:17 AM: INFO: Search customer by email validation PASSED
+04/22/2022 10:40:17 AM: INFO: Ending test_searchCustomerByEmail test case
+04/22/2022 10:40:21 AM: INFO: ****************************test_searchCustomerByName***************************
+04/22/2022 10:40:24 AM: INFO: Login successful
+04/22/2022 10:40:24 AM: INFO: Validating search customer by email testing
+04/22/2022 10:40:31 AM: INFO: Search customer by name validation PASSED
+04/22/2022 10:40:32 AM: INFO: Ending test_searchCustomerByName test case

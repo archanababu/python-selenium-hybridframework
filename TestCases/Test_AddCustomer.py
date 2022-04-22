@@ -1,5 +1,6 @@
 import string
 import random
+import pytest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from PageObjects.AddCustomerPage import AddCustomer
@@ -14,6 +15,7 @@ class Test_003_AddCustomer:
     password= ReadConfig.getPassword()
     logger  = LogGen.loggen()
 
+    @pytest.mark.regression
     def test_addCustomer(self, setup):
         self.logger.info("****************************test_addCustomer***************************")
         self.driver = setup
