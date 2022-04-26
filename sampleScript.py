@@ -4,6 +4,8 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 
+#Test sample change after username update in github
+
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 driver.get("https://admin-demo.nopcommerce.com/")
 driver.maximize_window()
